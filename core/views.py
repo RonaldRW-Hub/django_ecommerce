@@ -86,7 +86,7 @@ class CheckoutView(View):
                         messages.info(self.request, "No default shipping address available")
                         return redirect('core:checkout')
                 else:
-                    print("User is entering a new address")
+                    print("User is entering a new address for the operations")
                     shipping_address = form.cleaned_data.get('street_address')
                     shipping_address2 = form.cleaned_data.get('apartment_address')
                     shipping_country = form.cleaned_data.get('country')
